@@ -1,2 +1,8 @@
 # Ignore system files
 .DS_Store
+
+# Ignore test coverage
+/coverage/*
+
+# Ignore bundler config.
+/.bundle

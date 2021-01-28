@@ -33,5 +33,5 @@
 
 # List of webpages with most unique page views also ordered
   unique_views = {}
-  webpages_with_views.each { |webpage, views| all_views[webpage] = views.uniq.count }
-  p all_views.sort_by { |key, value| value }.reverse.to_h 
+  webpages_with_views.each { |webpage, views| unique_views[webpage] = views.uniq.count }
+  p unique_views.sort_by { |key, value| value }.reverse.to_h 

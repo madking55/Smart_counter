@@ -18,9 +18,9 @@ else
     logs = Parser.new(data).parse
     webpages = Counter.new(logs)
     puts "Webpages with most views:"
-      webpages.all_views.each { |page| puts "#{page[0]} - #{page[1]} views" }
+      webpages.list_all_views.each { |page| puts "#{page[0]} - #{page[1]} views" }
     puts '-------------------------------'
     puts "Webpages with most unique views:"
-      webpages.unique_views.each  { |page| puts "#{page[0]} - #{page[1]} unique views"}
+      webpages.list_unique_views.each  { |page| puts "#{page[0]} - #{page[1]} unique views"}
   end
 end
